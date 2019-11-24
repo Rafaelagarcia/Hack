@@ -1,0 +1,24 @@
+#include <iostream> //Hackathon de Carreiras
+#include <algorithm>   
+#include <cstdlib>
+using namespace std;
+ 
+int main (){
+    string palav;
+ 
+    palav = "ARE";
+    cout << "Digite uma palavra:"<<'\n';
+    cin >> palav;
+ 
+    std::sort (palav.begin(),palav.end());
+ 
+    
+    do {
+        std::cout << palav << '\n';
+    } while ( std::next_permutation(palav.begin(),palav.end()) );
+ 
+ 
+ 
+    cin.ignore();
+    return 0;
+}
