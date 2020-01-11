@@ -1,0 +1,19 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+int senha; // declaração de variáveis
+cout<<"Digite sua senha: ";
+cin>>senha;
+if (senha== 2002) {
+cout<<"Acesso Permitido";
+}
+else
+{
+cout<<"Acesso Negado";
+}
+
+return 0;
+}
